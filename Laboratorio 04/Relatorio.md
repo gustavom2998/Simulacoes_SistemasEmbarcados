@@ -13,7 +13,7 @@ O circuito foi disponibilizado através do TinkerCad ([link](https://www.tinkerc
 
 Abaixo temos o funcionamento do circuito.
 
-![alt text](https://i.imgur.com/6AvF6BY.gif)
+![alt text](1_Serial_UART/5_1_Serial.gif)
 
 
 ## 2 - Comunicação TWI (I2C)
@@ -24,4 +24,4 @@ O circuito foi disponibilizado através do TinkerCad ([link](https://www.tinkerc
 
 Abaixo temos o funcionamento do circuito.
 
-![alt text](https://i.imgur.com/zGgATRv.gif)
+![alt text](2_I2C/5_2_I2C.gif)

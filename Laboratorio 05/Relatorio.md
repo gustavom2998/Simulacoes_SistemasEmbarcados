@@ -12,7 +12,7 @@ O circuito foi disponibilizado através do TinkerCad ([link](https://www.tinkerc
 
 Abaixo temos o funcionamento do circuito.
 
-![alt text](https://i.imgur.com/kgfAQ7R.gif)
+![alt text](1_Comunicacao_Serial/lab5_1_controlador_uart1.gif)
 
 
 ## 2 - Comunicação Serial de uma string
@@ -22,7 +22,7 @@ O circuito foi disponibilizado através do TinkerCad ([link](https://www.tinkerc
 
 Abaixo temos o funcionamento do circuito.
 
-![alt text](https://i.imgur.com/hmR4Njj.gif)
+![alt text](2_Serial_Com_Strings/lab5_2_controlador_strings.gif)
 
 ## 3 - Comunicação de Strings com Armazenamento em EEPROM
 Por último, estendemos o nosso código de leitura de strings para ser capaz de armazenar valores na memória EEPROM que representam se o LED da respectiva cor deve estar aceso ou apagado. Utilizamos um endereço para cada cor, que inicialmente possuí o valor zero. Então, quando o usuário entra com uma cor, o valor no endereço da memória EEPROM para a respectiva cor é invertido e a saída do pino é atualizada. Algo interessante é que em uma aplicação real, o nosso EEPROM não seria apagado ao desligar o Arduino, logo, ao reiniciar o Arduino , os pinos manteriam os estados.
@@ -31,4 +31,4 @@ O circuito foi disponibilizado através do TinkerCad ([link](https://www.tinkerc
 
 Abaixo temos o funcionamento do circuito.
 
-![alt text](https://i.imgur.com/Ne8w8Mo.gif)
+![alt text](3_Armazenamento_EEPROM/lab5_3_controlador_EEPROM.gif)

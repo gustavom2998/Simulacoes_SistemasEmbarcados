@@ -16,4 +16,4 @@ O circuito foi disponibilizado através do TinkerCad ([link](https://www.tinkerc
 
 Abaixo temos o funcionamento do circuito.
 
-![alt text](https://i.imgur.com/MY4NMLY.gif)
+![alt text](Tinkercad/1_TesteLED.gif)

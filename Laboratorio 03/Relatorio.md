@@ -14,7 +14,7 @@ O circuito foi disponibilizado através do TinkerCad ([link](https://www.tinkerc
 
 Abaixo temos o funcionamento do circuito.
 
-![alt text](https://i.imgur.com/fH6ak8N.gif)
+![alt text](1_Blink/Lab3.1_Interrup.gif)
 
 
 ## 2 - Piscador de LED  com Registradores utilizando duas rotinas
@@ -24,7 +24,7 @@ O circuito foi disponibilizado através do TinkerCad ([link](https://www.tinkerc
 
 Abaixo temos o funcionamento do circuito.
 
-![alt text](https://i.imgur.com/HJNlAGa.gif)
+![alt text](2_Blink_Tabela/Lab3.2_Interrup_Tabela.gif)
 
 ## 3 - Piscador de LED com Registradores a 1Hz
 Neste caso, foi necessário alterar o funcionamento do temporizador. Reconfiguramos o oscilador de acordo com as especificações do Arduino Uno. Para o ajuste, modificamos o prescaler (ver pagina 170) que muda o intervalo de tempos que podemos "esperar". Por padrão, o Arduino possui um clock de 16MHz. Ao definir um prescaler de valor 256, é possível obter um periodo de 256/16MHz = 16us. Assim, para saber qual tempo seria equivalente a 1s, elevamos o período por -1, obtendo um valor de 62500 contagens necessárias para atingir o valor de 1s. Logo, simplesmente colocamos o contador para usar este valor como comparador para interrupção, e quando isto ocorrer, modificamos o estado do oscilador.
@@ -33,7 +33,7 @@ O circuito foi disponibilizado através do TinkerCad ([link](https://www.tinkerc
 
 Abaixo temos o funcionamento do circuito.
 
-![alt text](https://i.imgur.com/JvpHz5W.gif)
+![alt text](3_Blink_1Hz/Lab3.3_Interrup_1on_1off.gif)
 
 ## 4 - Piscador de LED - 1 segundo aceso 2 segundos apagados
 Neste caso, foi necessário mudar novamente o funcionamento do temporizador. Em primeiro lugar, foi necessário desabilitar mudar a configuração do contador de tal forma que ele não "resetasse" após atingir o valor da contagem (COM1B0 - pagina 170). Assim, primeiro ocorria uma interrupção após passar 1s, e então uma segunda interrupção após passar 3s (do início da contagem). Também foi necessário ajustar o contador para que ele fosse capaz de contar até 3 segundos. Para isso, o Prescaler foi alterado para um valor de 1024. Como utilizamos um prescaler para ajustar o valor, temos um período de 1024/16MHz = 64us. Para este período, precisamos de 1s/64us = 15625 contagens do contador para ter cerca de 1s e 46875 contagens para passar 3s. Duas rotinas de interrupções diferentes foram definidas, uma parada desativar o LED após 1s de contagem e depois outro para desativar o LED por 2s. Então, reiniciamos o contador e o ciclo se repete. 
@@ -42,4 +42,4 @@ O circuito foi disponibilizado através do TinkerCad ([link](https://www.tinkerc
 
 Abaixo temos o funcionamento do circuito.
 
-![alt text](https://i.imgur.com/KrNs8WM.gif)
+![alt text](4_Blink_1On_2off/Lab3.4_Interrup_2off_1on.gif)
