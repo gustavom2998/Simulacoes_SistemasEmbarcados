@@ -16,3 +16,4 @@ Segue abaixo uma lista contendo os experimentos realizados.
 * [Laboratório 04 - Comunicação Serial](Laboratorio_04/Relatorio.md)
 * [Laboratório 05 - Comunicação, Armazenamento e Recuperação de Dados](Laboratorio_05/Relatorio.md)
 * [Laboratório 06 - Visores de 7 Segmentos e LCDs](Laboratorio_06/Relatorio.md)
+* [Laboratório 07 - Debounce](Laboratorio_07/Relatorio.md)
