@@ -10,7 +10,7 @@ Para esta tarefa, configuramos um gerador de frequência para gerar uma onda qua
 
 Utilizando as equações de resposta de tensão sobre um capacitor em um circuito RC, e tomando como base um capacitor de 10uF, montamos um script de Matlab para identificar qual a tensão no momento de carregamento (linha azul) e descarregamento (linha laranja) do capacitor para um período de onda. Para o valor de 1K Ohms, encontramos o gráfico abaixo, que está no limite desejado de 0.8V abaixo da tensão de entrada.
 
-![alt text](1_Debounce_Hardware_Ripple/Grafico.png)
+![alt text](1_Debounce_Hardware_Ripple/Grafico.PNG)
 
 Em sequência, montamos um circuito RC e adicionamos osciloscópios na saída do gerador de onda e sobre o capacitor, com o intuito de comparar o sinal de entrada e o sinal filtrado, utilizando os valores de resistência e capacitância encontrados. Quando a frequência é menor que 1KHz, a tensão é maior que 4.2V, e quando a frequência é maior, ela fica menor que 4.2V. Para o teste com 1KHz, observe que o valor do osciloscópio sobre o capacitor é em torno de 5V conforme esperado, entretanto, quando mudamos a frequência para 100KHz, a tensão máxima registrada pelo osciloscópio cai.
 
@@ -25,7 +25,7 @@ Mantendo uma configuração semelhante ao anterior, diminuímos a frequência do
 
 Ajustamos o código em Matlab para encontrar o valor do capacitor que satisfazia esse objetivo. Com um valor de capacitância de 2.5uF e uma resistência de 1K Ohms encontramos a seguinte resposta.
 
-![alt text](2_Debounce_Hardware_Tempo/Grafico.png)
+![alt text](2_Debounce_Hardware_Tempo/Grafico.PNG)
 
 Então, montamos o circuito RC no tinkercad para analisar as tensões sobre o circuito utilizando um osciloscópio.
 
